@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yofetahe Habtu | Full Stack Develper</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myprofile/css/main.css' %}">
+    
+    <!-- begin - data-picker --- css and js -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- end - data-picker --- css and js -->
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rakkas">
+</head>
+<body id="page_body">
+
+    <div class="menu-bar">
+        <div class="profile-image"></div>
+        <h3 class="my-name">
+            <a href="/"> YOFETAHE HABTU </a>
+        </h3>
+        <p class="job-title">Full Stack Developer</p>
+        <div class="link-btn">
+            <a href="#about_me"> ABOUT ME </a>
+        </div>
+        <div class="link-btn">
+            <a href="#portfolio"> PORTFOLIO </a>
+        </div>
+        <div class="link-btn">
+            <a href="#technologies"> TECHNOLOGIES</a>
+        </div>
+        <div class="link-btn">
+            <a href="#contact_me"> CONTACT ME</a>
+        </div>
+        <div class="link-btn">
+           <a href="{% static 'myprofile/files/Yofetahe_Habtu_04222019.pdf' %}" target="_blank"> 
+                MY RESUME 
+            </a>
+        </div>
+        <div class="link-btn">
+            <a href="#my_notes">MY NOTES </a>
+        </div>
+        
+        <p>Copyright &copy; 2019</p>
+    </div>
+
+    <div class="content-bar">
+        {% block content %}
+
+        {% endblock content %}
+    </div>    
+    
+</body>
+</html>
