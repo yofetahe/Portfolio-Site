@@ -1,10 +1,14 @@
 {% extends 'myprofile/base.html' %}
 
 {% block content %}
-
+{% load static %}
+<style>         
+        
+</style>
 <section id="intro">
     <h1>Hello, I'm Yofetahe Habtu</h1>
-    <h3>Full Stack Developer</h3>
+    <!-- <hr style="border-bottom: 1ps solid rgb(165, 0, 0);"> -->
+    <h3><i>full stack web developer</i></h3>
 </section>
 
 <section id="about_me">
@@ -23,8 +27,8 @@
     {% include 'myprofile/contact_me.html' %}
 </section>
 
-<section id="my_notes">
+<!-- <section id="my_notes">
     {% include 'myprofile/my_notes.html' %}
-</section>
+</section> -->
 
 {% endblock content %}

@@ -1,94 +1,39 @@
 *{
     margin: 0px;
-    /* outline: 1px red solid; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 body#page_body { 
-    background: url("/static/myprofile/images/lalibela-ethiopia-3.jpg") no-repeat center center fixed; 
+    background: url("/static/myprofile/images/profile-bg.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-div.menu-bar{
-    background-color: rgba(165, 0, 0, 0.6);
-    display: inline-block;
-    width: 25%;
-    position: fixed;    
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding-top: 10px;  
-}
-
-div.profile-image{
-    background: url("/static/myprofile/images/Grid-Cube-Design.jpg");
-    background-size: cover; 
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px white solid;
-    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.9);
-    text-align: center;
-    margin: 0 auto;
-}
-.my-name{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #dadee9;
-    padding-top: 10px;
-    font-size: 1.5em;
-}
-div.menu-bar>h3.my-name>a{
-    text-decoration: none;
-    color: #dadee9;
-    font-size: 1.2em;
-}
-.job-title{
-    color: #a3a6af;
-    font-size: 1.5em;
-}
-
-div.link-btn{
-    border-bottom: .1em #a3a6af solid;
-    width: 180px;
-    height: 30px;
-    margin: 0 auto;
-    color: #dadee9;
-    padding-top: 18px;
-    cursor: pointer;
-}
-div.link-btn>a{
-    text-decoration: none;
-    color: #dadee9;
-}
-div.link-btn:hover{
-    border-bottom: .1em red solid;
-    cursor: pointer;
-    /* color: red; */
-}
-div.content-bar{
-    height: 100% !important;    
-    background-color: rgba(240, 231, 231, 0.5);
-    display: inline-block;
-    width: 74.9%;
-    margin-left: 25%;
-}
 h2{
-    color: rgb(165, 0, 0)
+    color: rgb(165, 0, 0);
+    margin-bottom: 10px;
 }
+
 
 /* ---------------- Intro ------------------- */
 
 section#intro{
     height: 400px !important;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgb(17, 17, 17);
-    text-align: center;
-    padding-top: 200px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    -webkit-text-stroke: 1px rgb(165, 0, 0);
+    text-align: center;    
+    padding-top: 250px;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section#intro>h1{
+    border-bottom: 1px solid red;
+    width: 100%;
+}
+section#intro>h3{
+    width: 100%;
 }
 
 /* ---------------- About Me ------------------- */
@@ -98,24 +43,9 @@ section#about_me{
     padding: 80px 20px;
     box-shadow: 1px 1px 10px #555252;
 }
-h2.about-me-title{
-    display: inline-block;
-    justify-content: space-between;
-    width: 20%;
-    vertical-align: top;
-}
-p.about-me-content{
-    display: inline-block;
-    justify-content: space-between;
-    width: 78%;
-    vertical-align: top;
-    line-height: 28px;
-    text-align: justify;
-    font-size: 18px;
-}
-
 
 /* ---------------- Portfolio ------------------- */
+
 section#portfolio{
     padding: 80px 20px;
     background-color: rgba(56, 55, 55, 0.6);
@@ -129,21 +59,15 @@ div.project-row{
     border-top: 1px #a50000 solid;
 }
 div.project-picture{
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
+    text-align: center;
 }
 div.project-picture>img{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
-div.project-description{
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-    padding-top: 45px;
-    padding-left: 5px;
-    line-height: 25px;
+div.project-detail>h3{
+    text-decoration: underline;
 }
 div.project-detail>a{
     text-decoration: none;
@@ -158,50 +82,93 @@ div.project-detail>a:hover{
 }
 div.project-technologies{
     padding-top: 20px;
+    margin-bottom: 10px;
 }
 div.project-technologies>h4{
     margin-bottom: 10px;
 }
 div.project-technologies>img{
     display: inline-block;
-    width: 50px;
+    width: 100%;
+    max-width: 50px;
     height: auto;
 }
-
+div.view-more{
+    margin-top: 40px;
+    text-align: center;
+}
+div.view-more>a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.5);
+    border: 1px solid rgba(245, 245, 245, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+div.view-more>a:hover{
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
 
 /* ---------------- Technologies ------------------- */
+    
 section#technologies{
     background-color: #CFC8C4;
     padding: 80px 20px;
     box-shadow: 1px 1px 10px #555252;
+    text-align: center;
 }
 div.technologies>h2{
     margin-bottom: 20px;
 }
-div.separator{
-    display: inline-block;
-    width: 8%;
+div.tech-row{
+    margin-bottom: 20px; 
 }
-div.front-end, div.back-end, div.tools{
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    text-align: center;
-}
-div.front-end>h3, div.back-end>h3, div.tools>h3{
+div.tech-row>h3{
     margin-bottom: 20px;
-    border-bottom: 1px solid #a50000;
+    border-bottom: 1px solid rgba(165, 0, 0, 0.5);
     color: whitesmoke;
     text-shadow: 1px 1px 2px rgb(17, 17, 17);
 }
-div.front-end>img, div.back-end>img, div.tools>img{
-    width: 70px;
+div.tech-row>p{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(165, 0, 0, 0.5);
+}
+div.tech-row>img{
+    width: 100%;
+    max-width: 70px;
     height: auto;
 }
 
-
+/* ----left and right bended div style---- */
+div.polaroid {
+    width: 210px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: whitesmoke;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
+    font-size: 16px;
+    color: black;
+}  
+div.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}  
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+div.techno-list{           
+    padding-left: 13px;
+}
 
 /* ---------------- contact me ------------------- */
+
 section#contact_me{
     padding: 80px 20px;
     background-color: rgba(56, 55, 55, 0.6);
@@ -216,13 +183,9 @@ section#contact_me>h2{
 div.contact-me-detail{
     font-size: 16px;
 }
-div.contact-address{
-    display: inline-block;
-    width: 33%;
-    text-align: center;
-}
 div.contact-address>img{
-    width: 75px;
+    width: 100%;
+    max-width: 75px;
     height: auto;
 }
 div.contact-address>a{
@@ -231,26 +194,24 @@ div.contact-address>a{
     text-decoration: none;
 }
 
-
-
-
 /* ---------------- My Notes ------------------- */
+    
 section#my_notes{
     padding: 80px 20px;
+    text-align: center;
 }
 section#my_notes>h2{
     margin-bottom: 20px;
 }
 div.note-content{
-    display: inline-block;
-    width: 30%;
     border: 1px solid silver;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #555252;
     padding: 10px;
     background-color: rgba(245, 245, 245, 0.4);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     line-height: 30px;
+    text-align: left;
 }
 div.note-content>div.title{
     font-weight: bold;
@@ -266,4 +227,294 @@ div.note-content>a{
 div.note-content>a:hover{
     color: whitesmoke;
     border: 1px solid whitesmoke;
+}
+
+
+/*===================  SMALL DEVICES ===================*/
+
+@media only screen and (max-width: 767px) {
+
+    div.header-bar{
+        background-color: rgba(165, 0, 0, 0.6);
+        min-height: 50px;
+        position: fixed;
+        width: 100%;
+    }
+    div.link-bars{
+        width: 2em;
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+    div.corner-line{
+        border: 2px solid whitesmoke;
+        margin-bottom: 5px;
+    }
+    div.header-link-list{
+        padding-left: 5px;
+        display: none;
+    }
+    div.header-link-list-display{
+        display: block;
+    }
+    div.header-link-list-hide{
+        display: none;
+    } 
+    div.link-btn{
+        border-bottom: .1em #a3a6af solid;
+        height: 30px;
+        width: 10em;
+        color: #dadee9;
+        padding-top: 18px;
+        cursor: pointer;        
+    }
+    div.link-btn>a{
+        text-decoration: none;
+        color: #dadee9;
+    }
+    div.side-bar{
+        display: none;
+    }
+
+    /* ---------------- About Me ------------------- */
+
+    p.about-me-content{        
+        line-height: 28px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ---------------- Portfolio ------------------- */    
+        
+    div.project-picture{        
+        width: 100%;
+    }
+    
+    div.project-description{        
+        vertical-align: top;
+        padding-top: 45px;        
+        line-height: 25px;
+    }
+    
+}
+
+/*=================== MEDIUM DEVICES ===================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    div.header-bar{
+        background-color: rgba(165, 0, 0, 0.6);
+        min-height: 100px;
+        position: fixed;
+        width: 100%;
+    }
+    div.link-bars{
+        width: 3em;
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+    div.corner-line{
+        border: 2px solid whitesmoke;
+        margin-bottom: 10px;
+    }
+    div.header-link-list{
+        padding-left: 5px;
+        display: none;
+    }
+    div.header-link-list-display{
+        display: block;
+    }    
+    div.link-btn{
+        border-bottom: .1em #a3a6af solid;
+        height: 30px;
+        width: 10em;
+        color: #dadee9;
+        padding-top: 18px;
+        cursor: pointer;        
+    }
+    div.link-btn>a{
+        text-decoration: none;
+        color: #dadee9;
+    }
+    div.side-bar{
+        display: none;
+    }
+
+
+    /* ---------------- About Me ------------------- */
+
+    p.about-me-content{        
+        line-height: 28px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ---------------- Portfolio ------------------- */    
+    
+    div.project-picture{        
+        width: 100%;
+    }
+    
+    div.project-description{        
+        vertical-align: top;
+        padding-top: 45px;        
+        line-height: 25px;
+    }
+    
+}
+
+/*=================== LARGE DEVICES ====================*/
+
+@media only screen and (min-width: 992px) {    
+    div.header-bar{
+        display: none;
+    }
+    div.side-bar{
+        background-color: rgba(165, 0, 0, 0.6);
+        display: inline-block;
+        width: 25%;
+        position: fixed;    
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 10px;  
+    }
+
+    div.profile-image{
+        background: url("/static/myprofile/images/Grid-Cube-Design.jpg");
+        background-size: cover; 
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px white solid;
+        box-shadow: inset 0px 0px 15px rgba(0,0,0,0.9);
+        text-align: center;
+        margin: 0 auto;
+    }
+    .my-name{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: #dadee9;
+        padding-top: 10px;
+        font-size: 1.5em;
+    }
+    div.side-bar>h3.my-name>a{
+        text-decoration: none;
+        color: #dadee9;
+        font-size: 1.2em;
+    }
+    .job-title{
+        color: #a3a6af;
+        font-size: 1.5em;
+    }
+
+    div.link-btn{
+        border-bottom: .1em #a3a6af solid;
+        width: 180px;
+        height: 30px;
+        margin: 0 auto;
+        color: #dadee9;
+        padding-top: 18px;
+        cursor: pointer;
+    }
+    div.link-btn>a{
+        text-decoration: none;
+        color: #dadee9;
+    }
+    div.link-btn:hover{
+        border-bottom: .1em red solid;
+        cursor: pointer;
+        /* color: red; */
+    }
+    div.content-bar{
+        height: 100% !important;    
+        background-color: rgba(240, 231, 231, 0.3);
+        display: inline-block;
+        width: 74.9%;
+        margin-left: 25%;
+    }
+    
+    .copyright{
+        color: whitesmoke;
+        position: fixed;
+        bottom: 0;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .active{
+        color: rgb(165, 0, 0);
+    }
+
+    /* ---------------- About Me ------------------- */
+
+    h2.about-me-title{
+        display: inline-block;
+        justify-content: space-between;
+        width: 20%;
+        vertical-align: top;
+    }
+    p.about-me-content{
+        display: inline-block;
+        justify-content: space-between;
+        width: 78%;
+        vertical-align: top;
+        line-height: 28px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ---------------- Portfolio ------------------- */    
+    
+    div.project-picture{
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }   
+    div.project-description{
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+        padding-top: 45px;
+        padding-left: 5px;
+        line-height: 25px;
+    }
+
+    /* ---------------- Technologies ------------------- */
+
+    div.separator{
+        display: inline-block;
+        width: 8%;
+    }
+    div.tech-row{
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+        text-align: center;
+    }
+    div.tech-list{
+        display: inline;
+        margin: 0 auto;
+    }
+
+    /* ---------------- contact me ------------------- */
+    
+    div.contact-address{
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    /* ---------------- My Notes ------------------- */
+
+    div.note-content{
+        display: inline-block;
+        width: 28%;
+        border: 1px solid silver;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px #555252;
+        padding: 10px;
+        background-color: rgba(245, 245, 245, 0.4);
+        margin: 10px;
+        line-height: 30px;
+    }
+   
 }

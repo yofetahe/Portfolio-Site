@@ -18,34 +18,64 @@
 </head>
 <body id="page_body">
 
-    <div class="menu-bar">
+    <div class="header-bar">
+        <a href="#" class="header-link" onclick="display_link_list()">
+            <div class="link-bars">
+                <div class="corner-line"></div>
+                <div class="corner-line"></div>
+                <div class="corner-line"></div>
+            </div>
+        </a>
+        <div class="header-link-list" id="header-link-list">
+            <div class="link-btn">
+                <a href="#about_me" onclick="hide_link_list()" class=""> ABOUT ME </a>
+            </div>
+            <div class="link-btn">
+                <a href="#portfolio" onclick="hide_link_list()" class=""> PORTFOLIO </a>
+            </div>
+            <div class="link-btn">
+                <a href="#technologies" onclick="hide_link_list()" class=""> TECHNOLOGIES</a>
+            </div>
+            <div class="link-btn">
+                <a href="#contact_me" onclick="hide_link_list()" class=""> CONTACT ME</a>
+            </div>
+            <div class="link-btn">
+                <a href="#my_notes" onclick="hide_link_list()" class="">MY NOTES </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="side-bar">
         <div class="profile-image"></div>
         <h3 class="my-name">
             <a href="/"> YOFETAHE HABTU </a>
         </h3>
         <p class="job-title">Full Stack Developer</p>
+
         <div class="link-btn">
-            <a href="#about_me"> ABOUT ME </a>
+            <a href="#about_me" class=""> ABOUT ME </a>
         </div>
         <div class="link-btn">
-            <a href="#portfolio"> PORTFOLIO </a>
+            <a href="#portfolio" class=""> PORTFOLIO </a>
         </div>
         <div class="link-btn">
-            <a href="#technologies"> TECHNOLOGIES</a>
+            <a href="#technologies" class=""> TECHNOLOGIES</a>
         </div>
         <div class="link-btn">
-            <a href="#contact_me"> CONTACT ME</a>
+            <a href="#contact_me" class=""> CONTACT ME</a>
         </div>
+        <!-- <div class="link-btn">
+            <a href="#my_notes" class="">MY NOTES </a>
+        </div> -->
+        
         <div class="link-btn">
-           <a href="{% static 'myprofile/files/Yofetahe_Habtu_04222019.pdf' %}" target="_blank"> 
+           <a href="{% static 'myprofile/files/Yofetahe_Habtu.pdf' %}" target="_blank"> 
                 MY RESUME 
             </a>
-        </div>
-        <div class="link-btn">
-            <a href="#my_notes">MY NOTES </a>
-        </div>
-        
-        <p>Copyright &copy; 2019</p>
+        </div>        
+        <div class="copyright">
+            <p>Copyright &copy; 2019</p>
+        </div>        
     </div>
 
     <div class="content-bar">
@@ -54,5 +84,48 @@
         {% endblock content %}
     </div>    
     
+    <script>
+        var collapse = false;
+        function display_link_list() {
+            collapse = !collapse;
+            var element = document.getElementById("header-link-list");
+            if(collapse){
+                element.className = "header-link-list " + "header-link-list-display";
+            } else {
+                element.className = "header-link-list " + "header-link-list-hide";
+            }
+        }
+
+        function hide_link_list(){
+            collapse = false;            
+            var element = document.getElementById("header-link-list");
+            element.className = "header-link-list " + "header-link-list-hide";
+        }
+        //  $(document).ready(function(){
+        //     $(".link-btn").click(function () {
+        //         $("a.active").removeClass('active');
+        //         $(this).addClass('active');
+        //         var active_section = $(this).attr('href'); //get active section id
+        //         $('html, body').animate({
+        //             //and scroll to the section
+        //             scrollTop: $(active_section).offset().top
+        //         }, 1000);
+        //     });
+        //     $(document).scroll(function () {
+        //         //get document scroll position
+        //         var position = $(document).scrollTop(); 
+        //         //get header height
+        //         var header = $('nav').outerHeight();                
+        //         //check active section
+        //         $('.section').each(function(i) {
+        //             if($(this).position().top <= (position + header))
+        //             {
+        //                 $("a.active").removeClass('active');
+        //                 $("a").eq(i).addClass('active');
+        //             }
+        //         });
+        //     });         
+        // });
+    </script>
 </body>
 </html>
