@@ -17,17 +17,6 @@ h2{
 
 /* ---------------- Intro ------------------- */
 
-section#intro{
-    height: 400px !important;
-    color: whitesmoke;
-    text-shadow: 1px 1px 2px black;
-    -webkit-text-stroke: 1px rgb(165, 0, 0);
-    text-align: center;    
-    padding-top: 250px;
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 section#intro>h1{
     border-bottom: 1px solid red;
     width: 100%;
@@ -234,6 +223,18 @@ div.note-content>a:hover{
 
 @media only screen and (max-width: 767px) {
 
+    /* ---------------- Intro ------------------- */
+    section#intro{
+        height: 300px !important;
+        color: whitesmoke;
+        text-shadow: 1px 1px 2px black;
+        -webkit-text-stroke: 1px rgb(165, 0, 0);
+        text-align: center;    
+        padding-top: 150px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
     div.header-bar{
         background-color: rgba(165, 0, 0, 0.6);
         min-height: 50px;
@@ -300,6 +301,17 @@ div.note-content>a:hover{
 /*=================== MEDIUM DEVICES ===================*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    /* ---------------- Intro ------------------- */
+    section#intro{
+        height: 300px !important;
+        color: whitesmoke;
+        text-shadow: 1px 1px 2px black;
+        -webkit-text-stroke: 1px rgb(165, 0, 0);
+        text-align: center;    
+        padding-top: 150px;
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
     div.header-bar{
         background-color: rgba(165, 0, 0, 0.6);
@@ -364,7 +376,20 @@ div.note-content>a:hover{
 
 /*=================== LARGE DEVICES ====================*/
 
-@media only screen and (min-width: 992px) {    
+@media only screen and (min-width: 992px) {
+    /* ---------------- Intro ------------------- */
+
+    section#intro{
+        height: 400px !important;
+        color: whitesmoke;
+        text-shadow: 1px 1px 2px black;
+        -webkit-text-stroke: 1px rgb(165, 0, 0);
+        text-align: center;    
+        padding-top: 250px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
     div.header-bar{
         display: none;
     }
