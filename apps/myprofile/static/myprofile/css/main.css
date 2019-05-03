@@ -3,11 +3,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body#page_body { 
-    background: url("/static/myprofile/images/profile-bg.png") no-repeat center center fixed; 
+    background: url("/static/myprofile/images/profile-bg.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; 
+
+    background-image: linear-gradient(#afacac, whitesmoke);
 }
 h2{
     color: rgb(165, 0, 0);
@@ -401,7 +403,8 @@ div.note-content>a:hover{
         height: 100%;
         overflow: hidden;
         text-align: center;
-        padding-top: 10px;  
+        padding-top: 10px;        
+        box-shadow: 5px 1px 7px #8b8787;  
     }
 
     div.profile-image{
